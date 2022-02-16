@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	{% load static %}
+    {% load static %}
 	<meta charset="utf-8">
 	<meta name="keywords" content="">
 	<meta name="description" content="">
@@ -12,15 +12,14 @@
 	<link media="all" rel="stylesheet" type="text/css" href="{% static 'site/css/all.css' %}" />
 </head>
 <body>
-
-	{% block content %} {% endblock %}
-
-
-
+	{% include 'site/_partials/header.html' %}
+    {% block content %} {% endblock %}
+	{% include 'site/_partials/footer.html' %}
 	<link media="all" rel="stylesheet" type="text/css" href="{% static 'site/css/jquery.fancybox.min.css' %}" />
 	<link media="all" rel="stylesheet" type="text/css" href="{% static 'site/css/slick.css' %}" />
 	<script src="{% static 'site/js/jquery-2.2.4.min.js' %}"></script>
 	<script src="{% static 'site/js/jquery.fancybox.min.js' %}"></script>
+	<script src="{% static 'site/js/slick.min.js' %}"></script>
 	<script src="{% static 'site/js/jquery.scrollTo.min.js' %}"></script>
 	<script src="{% static 'site/js/all.js' %}"></script>
 </body>
