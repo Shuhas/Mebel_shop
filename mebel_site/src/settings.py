@@ -120,7 +120,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-TOKEN_KEY = 'Token qoyiladi'
+TOKEN_KEY = '5215821984:AAFMS6GTUstAc0hSgWCVuY7g-NAWQRssuyA'
 
 
 # Static files (CSS, JavaScript, Images)

@@ -1,7 +1,8 @@
 from django.db import models
+from django.utils.text import slugify
 
 # Create your models here.
-from mebel_site.sitee import price_choice, color_choice
+from sitee import price_choice, color_choice
 
 
 class Category(models.Model):
@@ -29,5 +30,13 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Product_image(models.Model):
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    image = models.ImageField()
+
+    def __str__(self):
+        return self.product.name
 
 
